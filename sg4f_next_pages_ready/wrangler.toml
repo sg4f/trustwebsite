@@ -1,2 +1,3 @@
-name = "my-pages-app"
- pages_build_output_dir = "./dist"
+# wrangler.toml
+name = "trustwebsite"
+pages_build_output_dir = "./.vercel/output/static"
