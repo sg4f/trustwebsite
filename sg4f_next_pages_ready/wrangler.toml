@@ -1,3 +1,9 @@
-# wrangler.toml
+# sg4f_next_pages_ready/wrangler.toml
 name = "trustwebsite"
+
+# Required so Pages accepts Wrangler config for this project
 pages_build_output_dir = "./.vercel/output/static"
+
+# Enable Node.js APIs in Workers/Pages runtime
+compatibility_date = "2024-09-23"      # use this date or later
+compatibility_flags = ["nodejs_compat"]
