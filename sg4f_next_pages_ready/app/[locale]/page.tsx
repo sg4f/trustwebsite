@@ -1,22 +1,19 @@
-import { getDictionary } from '@/lib/i18n/getDictionary'
-import type { Locale } from '@/lib/i18n/locales'
-import VitrineClient from '@/components/VitrineClient'
-
-export default async function Page({ params:{ locale } }:{ params:{ locale: Locale } }){
-  const dict = await getDictionary(locale)
+export default function HomePage() {
   return (
-    <div className="space-y-10">
-      <section>
-        <h2 className="text-2xl font-bold text-navy">Sport Grounds 4 Future</h2>
-        <p className="mt-4 text-slate-600">
-          Impact you can verify — live.
+    <div className="max-w-3xl">
+      <h2 className="text-4xl font-extrabold text-navy mb-4">
+        Evidence-Based Impact for Community Sports.
+      </h2>
+      <p className="text-lg text-slate-600 leading-relaxed">
+        Nous transformons les données de terrain en preuves auditables pour le climat, 
+        la santé et l'inclusion sociale.
+      </p>
+      <div className="mt-8 p-6 bg-sky-50 border border-sky-100 rounded-2xl">
+        <h3 className="font-bold text-sky-900">Live Pilot: Level Up Senegal</h3>
+        <p className="text-sm text-sky-800 mt-2">
+          Suivi en temps réel de l'utilisation des infrastructures et de la maintenance solaire.
         </p>
-      </section>
-
-      <section className="bg-slate-50 p-6 rounded-xl border border-slate-100">
-        <h3 className="text-xl font-bold mb-6">{dict.home.what}</h3>
-        <VitrineClient />
-      </section>
+      </div>
     </div>
-  )
+  );
 }
