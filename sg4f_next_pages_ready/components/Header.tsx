@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Header({ locale }: { locale: string }) {
-  const pathname = usePathname();        // ok in client components
+  const pathname = usePathname();
   const prefix = `/${locale}/`;
 
   return (
@@ -13,8 +13,7 @@ export default function Header({ locale }: { locale: string }) {
         <Link href={prefix} className="flex items-center gap-3">
           <div className="text-2xl md:text-3xl font-black tracking-wide">SG4F</div>
         </Link>
-        {/* …rest of your header… */}
+        {/* …add the rest of your header UI here… */}
       </div>
     </header>
-  );
-}
+ 
