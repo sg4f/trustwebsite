@@ -1,3 +1,6 @@
-# wrangler.toml (keep in the same folder as package.json)
+# wrangler.toml (same folder as package.json)
 compatibility_date = "2026-03-04"
 compatibility_flags = ["nodejs_compat"]
+
+# Tell Cloudflare Pages where the build output lives (Next-on-Pages)
+pages_build_output_dir = ".vercel/output/static"
