@@ -1,0 +1,1 @@
+export default function Page(){return (<div className="space-y-6"><h2 className="text-xl font-bold">Contact</h2><p>Email: info@sportgrounds4future.org (placeholder) — or use your preferred form service.</p></div>)}

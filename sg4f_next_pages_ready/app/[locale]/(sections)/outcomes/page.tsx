@@ -1,0 +1,1 @@
+export default function Page(){return (<div className="space-y-6"><h2 className="text-xl font-bold">Outcomes & Safeguarding</h2><p>Instruments: WHO‑5/SWEMWBS, PHQ‑4→PHQ‑9/GAD‑7, PSS‑4, UCLA‑3, SDQ (youth). Cadence: 0/3/6/12 months. Safeguarding: opt‑in, coaches don’t diagnose, rights‑based referral, de‑identified dashboards.</p></div>)}

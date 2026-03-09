@@ -1,0 +1,1 @@
+export default function Page(){return (<div className="space-y-6"><h2 className="text-xl font-bold">Our Model</h2><p>We leverage the power of sport to drive positive change, advancing sustainable and inclusive community spaces with local authorities and partners (no “we build”).</p></div>)}

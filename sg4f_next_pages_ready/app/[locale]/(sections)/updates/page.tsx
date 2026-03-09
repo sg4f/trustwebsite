@@ -1,0 +1,1 @@
+export default function Page(){return (<div className="space-y-6"><h2 className="text-xl font-bold">Updates</h2><p>Monthly Impact — Issue #1 (Canva PDF) and MoU announcements will appear here.</p></div>)}
