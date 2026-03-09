@@ -1,18 +1,24 @@
-export const runtime = 'edge'
+import Header from '@/components/Header';
+import '@/app/globals.css';
 
-import './globals.css'
-import type { Metadata } from 'next'
-import { clsx } from 'clsx'
-
-export const metadata: Metadata = {
-  title: 'SG4F — Play, Learn, Thrive.',
-  description: 'SG4F turns community sport into verified outcomes with a visible verification loop.'
-}
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+  params: { locale }
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
   return (
-    <html lang="en">
-      <body className={clsx('min-h-screen flex flex-col')}>{children}</body>
+    <html lang={locale}>
+      <body className="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+        <Header locale={locale} />
+        <main className="flex-grow container mx-auto px-4 py-8">
+          {children}
+        </main>
+        <footer className="bg-white border-t py-6 text-center text-sm text-slate-500">
+          © {new Date().getFullYear()} Sport Grounds 4 Future
+        </footer>
+      </body>
     </html>
-  )
+  );
 }
